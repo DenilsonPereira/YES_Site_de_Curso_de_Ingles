@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #FF3131;
+    /* blue */
+    --secondary-color: #4458be;
+    /* darkblue */
+    --text-dark: #000000;
+    --text-light: #ffffff;
+    --copy: #E6E4E4;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav>ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+
+    margin: auto;
+}
+
+nav>ul a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+nav>ul a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+nav>ul a.active {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+nav>a {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+header>img {
+    width: 200px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.section1>div+div {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: var(--primary-color);
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.section1>div img {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    width: 275px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 40%;
+}
+
+.section1 h1,
+.section1 h2 {
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.section1 p {
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.section1 a {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: var(--text-light);
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 65px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
+}
+
+.section1 a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    transition: all .5s ease;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.section2>div img {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 0 0 20px 200px;
+}
+
+.section2>div+div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 100px;
+    height: 100vh;
+
+}
+
+.section2>div+div h1 {
+    margin-bottom: 100px;
+}
+
+.section2 a {
+    width: 400px;
+    margin-top: 50px;
+    color: var(--text-light);
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    padding: 15px 65px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
+}
+
+.section2 a:hover {
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    border: var(--primary-color) solid 1px;
+    transition: all .5s ease;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+.section3 summary {
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.section3 summary>i {
+    font-size: 2.5rem;
+}
+
+.faq1 {
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+
+.faq2 {
+    position: relative;
+    top: 8px;
+    left: 35px;
+}
+
+.faq3 {
+    position: relative;
+    top: 8px;
+    left: 6px;
+}
+
+.faq4 {
+    position: relative;
+    top: 8px;
+    left: 38px;
+}
+
+.section3 details>p {
+    margin: 20px 0 10px 0;
+    line-height: 1.5;
+    width: 600px;
+}
+
+.section3 li {
+    background-color: var(--text-light);
+    color: var(--secondary-color);
+    list-style: none;
+    padding: 10px 40px;
+    margin: 20px 0;
+    border-radius: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.footer-content>div>img {
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+}
+
+.footer_menu ul {
+    margin-top: 20px;
+}
+
+.footer_menu li {
+    margin: 10px 0;
+}
+
+.footer_menu a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icons>a>i {
+    width: 30px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--copy);
+    padding: 10px 0 0 0;
+}
+
+hr {
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border: none;
+    box-shadow: 2px 3px 10px rgba(1, 5, 5, 0.5);
+}
+
+.copyright p {
+    margin-bottom: 15px;
+}
+
+.cursoIntroducao {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/5.jpeg);
+    background-repeat: no-repeat;
+    background-color: var(--secondary-color);
+    background-size: cover;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cursoContent>img {
+    position: relative;
+    top: 50px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.cursoContent>h1 {
+    position: relative;
+    top: -20px;
+    left: 100px;
+    font-size: 2.7rem;
+    color: var(--text-light);
+}
+
+.cursoContent>h2 {
+    background-color: var(--text-light);
+    color: var(--secondary-color);
+    width: 430px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cursoContent>div {
+    background-color: #ffffff8e;
+    width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.cursoContent {
+    margin: 50px 0 0 150px;
+}
+
+.adultos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.adultosContent>p {
+    width: 500px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.adultosContent>h1 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.adultos img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
+}
+
+.adultosContent a {
+    color: var(--text-light);
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    margin: auto;
+    padding: 15px 65px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
+}
+
+.jovens {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.jovensContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.jovensText>p {
+    color: var(--text-light);
+    width: 500px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.jovensText>h1 {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.jovensContent a {
+    color: var(--text-light);
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    margin: auto;
+    padding: 15px 65px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
+}
+
+.jovens img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
+}
+
+.sectionSobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/escola.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.sectionSobre h1,
+.sectionSobre h2 {
+    margin-left: 100px;
+    color: var(--secondary-color);
+    width: 700px;
+}
+
+.sectionSobre p {
+    margin-left: 100px;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.visao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.visao h1 {
+    color: var(--text-light);
+    margin-bottom: 50px;
+}
+
+.visao p {
+    color: var(--text-light);
+}
+
+.visao img {
+    width: 300px;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(93%) sepia(7%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(108%);
+}
+
+.missao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--text-light);
+}
+
+.missao h1 {
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+.missao p {
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.missao img {
+    width: 300px;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(73%) saturate(484%) hue-rotate(187deg) brightness(90%) contrast(99%);
+}
+
+.contatoSection {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 100px;
+}
+
+.contatoText {
+    width: 620px;
+}
+
+.contatoText h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.contatoText h2 {
+    margin-bottom: 10px;
+}
+
+.contatoText p {
+    line-height: 1.5;
+}
+
+.contatoForm>form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 100px;
+}
+
+.contatoForm>form input[type="text"],
+.contatoForm>form input[type="email"],
+.contatoForm>form input[type="tel"],
+.contatoForm>form textarea {
+    background: #fcf6f2;
+    border: #a09f9f solid 2px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.contatoForm>form>label {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.contatoForm>form button {
+    color: var(--text-light);
+    font-weight: 700;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    margin: auto;
+    padding: 12px 80px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
+}
+
+.contatoForm>form button:hover {
+    cursor: pointer;
+    background-color: #740a0a;
+}
+
+.contatoForm>form>div {
+    margin: 10px 0 10px 50px;
+
+}
+
+.contatoForm>form>div label {
+    font-size: .7rem;
+}
+
+.contatoForm>form>div input {
+    position: relative;
+    top: 3px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    height: 80vh;
+}
+
+.dashboard>div {
+    display: flex;
+    justify-content: center;
+    background-color: #fcf6f2;
+    width: 60%;
+    height: 300px;
+    padding-top: 10px;
+    border: #a09f9f solid 2px;
+    border-radius: 10px;
+}
+
+.dashboard a {
+    position: relative;
+    top: -20px;
+    left: -225px;
+    color: var(--text-light);
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    padding: 12px 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
+}
