@@ -647,3 +647,29 @@ hr {
     border: none;
     box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
 }
+
+/* BREAKPOINTS */
+
+@media (max-width: 1200px){
+    
+}
+
+@media (max-width: 991px){
+    
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 617px){
+    
+}
+
+@media (max-width: 450px){
+    
+}
+
+@media (max-width: 365px){
+    
+}
