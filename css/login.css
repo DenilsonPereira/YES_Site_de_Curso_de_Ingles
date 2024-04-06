@@ -70,6 +70,7 @@ section{
 }
 
 .login #entrar{
+    
     background-color: var(--primary-color);
     color: var(--text-light);
     text-decoration: none;
@@ -104,4 +105,9 @@ section{
 }
 .checked label{
     font-size: .8rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
 }
