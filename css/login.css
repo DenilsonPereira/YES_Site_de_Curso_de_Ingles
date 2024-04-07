@@ -53,10 +53,7 @@ section{
     font-size: 1.2rem;
 }
 .voltar{
-    display: block;
-    position: relative;
-    top: 30px;
-    left: 34rem;
+    margin-top: 1rem;
 }
 .voltar > a{
     font-size: 1.3rem;
