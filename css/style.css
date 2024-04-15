@@ -658,9 +658,7 @@ hr {
 
 /* BREAKPOINTS */
 @media (max-width: 1200px){
-    html{
-        font-size: 70%;
-    }
+    
 }
 @media (max-width: 991px) {
     
