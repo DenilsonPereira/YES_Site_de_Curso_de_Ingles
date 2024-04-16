@@ -691,7 +691,14 @@ hr {
 
     .section1 {
         flex-direction: column;
-        height: 120vh;
+        height: 110vh;
+    }
+
+    .section1 a{
+        display: block;
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
     }
     
     .section1>div+div {
@@ -708,7 +715,7 @@ hr {
     }
     
     .section1 h1{
-        margin-top: 100px;
+        margin-top: 150px;
     }
     .section1 h1, .section1 h2, .section1 p{
         text-align: center;
@@ -716,12 +723,12 @@ hr {
 
     .section2 {
         flex-direction: column;
-        height: 120vh;
+        height: 100vh;
         text-align: center;
+        margin-top: 50px;
     }
     .section2 a{
         text-align: center;
-        margin: auto;
     }
     .section2>div img {
         margin: 50px;
@@ -730,14 +737,15 @@ hr {
         display: none;
     }
     
-    .section2>div+div h1 {
+    .section2>div+div h1, .section2>div+div p {
         margin-bottom: 30px;
     }
 
     .section3 {
+        margin-top: 120px;
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 120vh;
     }
     .section3 > h1{
         margin-bottom: 20px;
@@ -788,7 +796,7 @@ hr {
     .footer-content {
         flex-direction: column;
         align-items: start;
-        height: 40vh;
+        height: 100vh;
         margin-top: 50px;
     }
     
@@ -801,10 +809,10 @@ hr {
     }
     
     .footer_menu {
-        justify-content: space-around;
+        justify-content: flex-start;
         width: 80%;
         margin: 0px auto;
-        height: auto;
+        height: 100vh;
     }
     
     .icons {
@@ -824,10 +832,10 @@ hr {
         flex-direction: row;
         justify-content: center;
         background-size: auto;
-        height: 80vh;
+        height: 100vh;
     }
     .cursoContent>img {
-        top: 20px;
+        top: 40px;
         width: 60px;
     }
 
