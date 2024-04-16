@@ -1001,21 +1001,49 @@ hr {
         width: 80%;
         text-align: center;
     }
-    .section2  a{
+    .section2 a{
         font-size: .9rem;
-        width: 110%;
+        width: 100%;
     }
     .section3 > h1{
         margin-bottom: 20px;
         text-align: center;
     }
-    
-    .cursoContent>div {
-        width: 100%;
+    .cursoIntroducao{
+        margin: auto;
     }
     
-    .cursoContent {
-        margin: 10px;
+    .cursoContent>div {
+        width: 80vw;
+        margin: auto;
+    }
+    .cursoContent > h1{
+        font-size: 2.1rem;
+    }
+    .cursoContent > h2{
+        width: 90vw;
+    }
+    .adultos, .jovensContent{
+        margin-top: 50px;
+        width: 90vw;
+    }
+    .jovensText{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        text-align: center;
+    }
+    .jovensText > p{
+        width: 80vw;
+    }
+    .jovens{
+        height: 120vh;
+    }
+    .sectionSobre{
+        height: 100vh;
+    }
+    hr{
+        margin-top: 50px;
     }
 }
 @media (max-width: 365px) {
