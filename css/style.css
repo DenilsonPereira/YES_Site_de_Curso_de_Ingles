@@ -647,37 +647,371 @@ hr {
     border: none;
     box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
 }
-.dashMenu{
+
+.dashMenu {
     gap: 20px;
 }
 
-.dashMenu i{
+.dashMenu i {
     position: relative;
     top: 5px;
 }
 
 /* BREAKPOINTS */
-@media (max-width: 1200px){
-    
-}
+
 @media (max-width: 991px) {
-    
+    .section2 {
+        margin-top: 50px;
+    }
+
+    .section2 a {
+        text-align: center;
+        width: 300px;
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .section2>div img {
+        margin: 20px 0px 0px 100px;
+        max-width: 250px;
+        height: 150px;
+    }
+
+    .cursoContent>img {
+        top: 40px;
+        width: 60px;
+    }
+
+    .cursoContent {
+        margin: 15px 70px;
+    }
+
+    .adultosContent>p,
+    .adultosContent>h1,
+    .jovensText h1,
+    .jovensText p {
+        width: 90%;
+    }
+
+    .jovensContent {
+        width: 80vw;
+        gap: 50px;
+    }
+
+    .adultos img,
+    .jovens img {
+        width: 280px;
+    }
+
+    .sectionSobre h1,
+    .sectionSobre h2,
+    .sectionSobre p {
+        margin: 20px 0px 0px 20px;
+        width: 60vw;
+    }
+
+    .visao {
+        gap: 50px;
+    }
+
+    .missao {
+        gap: 150px;
+    }
+
+    .visao h1,
+    .missao h1 {
+        text-align: center;
+    }
+
+    .visao p,
+    .missao p {
+        width: 50vw;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .visao img {
+        width: 210px;
+        margin-left: 50px;
+    }
+
+    .missao img {
+        width: 210px;
+        margin-left: -150px;
+    }
+
+    .contatoSection {
+        height: auto;
+        gap: 100px;
+        margin: 0px;
+    }
+
+    .contatoForm {
+        padding: 20px;
+    }
+
+    .contatoText {
+        width: 80%;
+        text-align: justify;
+        padding: 0px 20px;
+    }
+
+    .dashboard>div {
+        width: 80%;
+        height: 70%;
+    }
 }
 
 
 @media (max-width: 768px) {
-    
+    .section2 {
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+
+    .section2 a {
+        text-align: center;
+        width: 300px;
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .section2_txt {
+        max-width: 100vw;
+    }
+
+    .section2>div img {
+        margin: 20px;
+        max-width: 250px;
+    }
+
+    .section2>div img+img {
+        display: none;
+    }
+
+    .section2>div+div h1,
+    .section2>div+div p {
+        margin-bottom: 10px;
+    }
+
+    .section3 {
+        margin-top: 50px;
+        height: 100vh;
+    }
+
+    .section3 summary {
+        font-size: 1rem;
+    }
+
+    .section3 summary>i {
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: start;
+        height: 100vh;
+        margin-top: 50px;
+    }
+
+    .footer-content>div>img {
+        position: relative;
+        top: 0;
+        left: 50px;
+        width: 150px;
+        margin: 20px 0px;
+    }
+
+    .footer_menu {
+        justify-content: center;
+        gap: 50px;
+        width: 100vw;
+        margin: 0px auto;
+        height: 100vh;
+    }
+
+    .copyright {
+        margin-top: 0px;
+    }
+
+    .cursoIntroducao {
+        flex-direction: row;
+        justify-content: center;
+        height: 120vh;
+        margin-bottom: 100px;
+    }
+
+    .cursoContent>img {
+        top: 40px;
+        width: 60px;
+    }
+
+    .cursoContent>h1 {
+        left: 100px;
+    }
+
+    .cursoContent>div {
+        width: 70%;
+    }
+
+    .cursoContent {
+        margin: 15px 50px;
+    }
+
+    .adultos {
+        justify-content: center;
+        width: 90vw;
+        height: 100vh;
+        margin-top: -50px;
+    }
+
+    .adultosContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .adultosContent>p,
+    .adultosContent>h1,
+    .jovensText h1,
+    .jovensText p {
+        width: 90%;
+    }
+
+    .adultosContent>a {
+        margin: 0px;
+        padding: 10px;
+        text-align: center;
+        width: 250px;
+    }
+
+    .adultos img,
+    .jovens img {
+        width: 280px;
+    }
+
+    .jovens {
+        margin: 100px 0px;
+        width: 100vw;
+        height: 110vh;
+    }
+
+    .jovensContent {
+        display: flex;
+        width: 90vw;
+        gap: 50px;
+    }
+
+    .jovensText>a {
+        display: block;
+        margin: 0px 0px 50px 0px;
+        padding: 10px;
+        text-align: center;
+        width: 250px;
+    }
+
+    .jovensText h1 {
+        margin-top: 50px;
+    }
+
+    .criancas {
+        margin-bottom: 100px;
+    }
+
+    .sectionSobre {
+        justify-content: flex-start;
+        background-image: none;
+        height: 100vh;
+        margin: 30px 0px;
+    }
+
+    .sectionSobre h1,
+    .sectionSobre h2 {
+        margin: 30px 0px 0px 20px;
+        width: 100vw;
+    }
+
+    .sectionSobre p {
+        margin: 20px 0px 0px 20px;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .visao,
+    .missao {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .visao h1,
+    .missao h1 {
+        text-align: center;
+    }
+
+    .visao p,
+    .missao p {
+        width: 100%;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .visao img {
+        width: 210px;
+        margin-left: 50px;
+    }
+
+    .missao img {
+        width: 210px;
+        margin-left: -50px;
+    }
+
+    .contatoSection {
+        height: auto;
+        gap: 20px;
+        margin: 50px 0px;
+    }
+
+    .contatoText {
+        width: 90%;
+        text-align: justify;
+        padding: 0px 20px;
+    }
+
+    .contatoText h1,
+    .contatoText h2 {
+        margin-bottom: 30px;
+    }
+
+    .dashboard>div {
+        width: 90%;
+        height: 70%;
+    }
+
+    .dashboard a {
+        position: relative;
+        top: -40px;
+        left: 0px;
+    }
+
 }
 
 @media screen and (max-width: 617px) {
-    header, nav, nav > ul {
+
+    header,
+    nav,
+    nav>ul {
         flex-direction: column;
     }
-    
+
     nav>ul {
         margin: 10px;
     }
-    
+
     nav>a {
         background-color: var(--secondary-color);
         color: var(--text-light);
@@ -694,30 +1028,33 @@ hr {
         height: 110vh;
     }
 
-    .section1 a{
+    .section1 a {
         display: block;
         text-align: center;
         max-width: 80%;
         margin: auto;
     }
-    
+
     .section1>div+div {
         margin-top: 50px;
         width: 240px;
         height: 240px;
         padding: 24px;
     }
-    
+
     .section1>div img {
         top: 40px;
         width: 220px;
         height: 200px;
     }
-    
-    .section1 h1{
+
+    .section1 h1 {
         margin-top: 150px;
     }
-    .section1 h1, .section1 h2, .section1 p{
+
+    .section1 h1,
+    .section1 h2,
+    .section1 p {
         text-align: center;
     }
 
@@ -727,17 +1064,21 @@ hr {
         text-align: center;
         margin-top: 50px;
     }
-    .section2 a{
+
+    .section2 a {
         text-align: center;
     }
+
     .section2>div img {
         margin: 50px;
     }
-    .section2>div img + img{
+
+    .section2>div img+img {
         display: none;
     }
-    
-    .section2>div+div h1, .section2>div+div p {
+
+    .section2>div+div h1,
+    .section2>div+div p {
         margin-bottom: 30px;
     }
 
@@ -747,59 +1088,61 @@ hr {
         justify-content: center;
         height: 120vh;
     }
-    .section3 > h1{
+
+    .section3>h1 {
         margin-bottom: 20px;
     }
-    
+
     .section3 summary {
         font-size: 1rem;
     }
-    
+
     .section3 summary>i {
         font-size: 1rem;
     }
-    
+
     .faq1 {
         position: relative;
         top: 0px;
         left: 15px;
     }
-    
+
     .faq2 {
         position: relative;
         top: 0px;
         left: 30px;
     }
-    
+
     .faq3 {
         position: relative;
         top: 0px;
         left: 10px;
     }
-    
+
     .faq4 {
         position: relative;
         top: 0px;
         left: 32px;
     }
-    
+
     .section3 details>p {
-        margin: 20px 0 ;
+        margin: 20px 0;
         width: 100%;
         font-size: 1rem;
     }
+
     .section3 li {
         padding: 10px 40px;
         margin: 20px 0;
     }
-    
+
     .footer-content {
         flex-direction: column;
         align-items: start;
         height: 100vh;
         margin-top: 50px;
     }
-    
+
     .footer-content>div>img {
         position: relative;
         top: 0;
@@ -807,23 +1150,23 @@ hr {
         width: 150px;
         margin: 20px 0px;
     }
-    
+
     .footer_menu {
         justify-content: flex-start;
         width: 80%;
         margin: 0px auto;
         height: 100vh;
     }
-    
+
     .icons {
         display: flex;
         margin-top: 20px;
     }
-    
+
     .icons>a>i {
         width: 30px;
     }
-    
+
     .copyright {
         margin-top: 150px;
     }
@@ -834,6 +1177,7 @@ hr {
         background-size: auto;
         height: 100vh;
     }
+
     .cursoContent>img {
         top: 40px;
         width: 60px;
@@ -846,96 +1190,99 @@ hr {
     .cursoContent>div {
         width: 70%;
     }
-    
+
     .cursoContent {
         margin: 30px;
     }
-    
+
     .adultos {
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         width: 80%;
         height: 120vh;
     }
 
-    .adultosContent{
+    .adultosContent {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    
+
     .adultosContent>p {
         text-align: center;
         width: 100%;
     }
-    
+
     .adultosContent>h1 {
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .adultos img {
         width: 280px;
         margin-top: 50px;
     }
-    
-    .jovens{
+
+    .jovens {
         flex-direction: column;
         width: 100%;
         height: 110vh;
     }
-    
+
     .jovensContent {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    
+
     .jovens img {
         width: 280px;
         margin-top: 50px;
     }
 
-     .sectionSobre {
+    .sectionSobre {
         flex-direction: column;
         justify-content: flex-start;
         background-image: none;
         height: 70vh;
     }
-    
+
     .sectionSobre h1,
     .sectionSobre h2 {
         margin: 30px 0px 0px 20px;
         width: 90%
     }
-    
+
     .sectionSobre p {
         margin: 20px 0px 0px 20px;
         width: 90%;
         text-align: justify;
     }
-    
-    .visao, .missao {
+
+    .visao,
+    .missao {
         flex-direction: column;
         gap: 0px;
         height: 80vh;
     }
-    
-    .visao h1, .missao h1 {
+
+    .visao h1,
+    .missao h1 {
         text-align: center;
     }
-    
-    .visao p, .missao p {
+
+    .visao p,
+    .missao p {
         width: 100%;
         text-align: center;
         padding: 0px 20px;
     }
-    
+
     .visao img {
         width: 210px;
     }
-    
+
     .missao img {
         width: 210px;
         margin-left: -50px;
@@ -947,25 +1294,26 @@ hr {
         gap: 0px;
         margin-bottom: 0px;
     }
-    
+
     .contatoText {
         width: 100%;
         text-align: center;
         padding: 0px 20px;
     }
-    
-    .contatoText h1 ,.contatoText h2 {
+
+    .contatoText h1,
+    .contatoText h2 {
         margin-bottom: 30px;
     }
-    
+
     .contatoForm>form {
         margin-top: 70px;
     }
-    
+
     .dashboard>div {
         width: 90%;
     }
-    
+
     .dashboard a {
         position: relative;
         top: -40px;
@@ -973,90 +1321,108 @@ hr {
     }
 }
 
-@media (max-width: 450px){
-    
-    .section1 h1{
+@media (max-width: 450px) {
+
+    .section1 h1 {
         margin-top: 0px;
     }
-    .section1 a{
+
+    .section1 a {
         text-align: center;
-        width:  100%;
+        width: 100%;
         margin: auto;
     }
-    .section1 h1, .section1 h2, .section1 p{
+
+    .section1 h1,
+    .section1 h2,
+    .section1 p {
         text-align: center;
     }
-    
+
     .section2>div img {
         margin: 50px 0px 0px 0px;
         width: 100%;
     }
-    
+
     .section2>div+div h1 {
         margin-bottom: 30px;
     }
-    .section2 > .section2_txt{
+
+    .section2>.section2_txt {
         display: flex;
         align-items: center;
         width: 80%;
         text-align: center;
     }
-    .section2 a{
+
+    .section2 a {
         font-size: .9rem;
         width: 100%;
     }
-    .section3 > h1{
+
+    .section3>h1 {
         margin-bottom: 20px;
         text-align: center;
     }
-    .cursoIntroducao{
+
+    .cursoIntroducao {
         margin: auto;
     }
-    
+
     .cursoContent>div {
         width: 80vw;
         margin: auto;
     }
-    .cursoContent > h1{
+
+    .cursoContent>h1 {
         font-size: 2.1rem;
     }
-    .cursoContent > h2{
+
+    .cursoContent>h2 {
         width: 90vw;
     }
-    .adultos, .jovensContent{
+
+    .adultos,
+    .jovensContent {
         margin-top: 50px;
         width: 90vw;
     }
-    .jovensText{
+
+    .jovensText {
         display: flex;
         flex-direction: column;
         width: 80vw;
         text-align: center;
     }
-    .jovensText > p{
+
+    .jovensText>p {
         width: 80vw;
     }
-    .jovens{
+
+    .jovens {
         height: 120vh;
     }
-    .sectionSobre{
+
+    .sectionSobre {
         height: 100vh;
     }
-    hr{
+
+    hr {
         margin-top: 50px;
     }
 }
+
 @media (max-width: 365px) {
     .section1>div+div {
         margin-top: 20px;
     }
-    
-    .section1 h1{
+
+    .section1 h1 {
         margin-top: 0px;
         font-size: 1.8rem;
     }
-    
-    .section1 a{
+
+    .section1 a {
         display: block;
         text-align: center;
         width: 80%;
@@ -1064,25 +1430,29 @@ hr {
         padding: 10px;
         font-size: 1rem;
     }
-    
-    .section1 h1, .section1 h2, .section1 p {
+
+    .section1 h1,
+    .section1 h2,
+    .section1 p {
         text-align: center;
     }
-    .section2{
+
+    .section2 {
         height: 100vh;
     }
+
     .section2>div img {
         margin: 40px auto 20px auto;
         width: 50%;
         height: auto;
     }
-    
+
     .section2>div+div h1 {
         margin-bottom: 20px;
         font-size: 1.6rem;
     }
 
-    .section2 > .section2_txt {
+    .section2>.section2_txt {
         width: 90%;
         margin: auto;
         text-align: center;
@@ -1095,17 +1465,17 @@ hr {
         padding: 10px;
     }
 
-    .section3 > h1 {
+    .section3>h1 {
         margin-bottom: 20px;
         text-align: center;
         font-size: 1.6rem;
     }
-    
+
     .cursoContent>div {
         width: 80%;
         margin: auto;
     }
-    
+
     .cursoContent {
         margin: 10px;
     }
