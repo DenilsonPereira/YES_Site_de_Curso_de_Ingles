@@ -1,0 +1,24 @@
+#mensagens-tabela {
+    margin-top: 20px;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+#mensagens-tabela th, #mensagens-tabela td {
+    border: 1px solid #c9c9c9;
+    padding: 8px;
+    text-align: left;
+}
+
+#mensagens-tabela th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#mensagens-tabela tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#mensagens-tabela tr:hover {
+    background-color: #f1f1f1;
+}

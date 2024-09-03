@@ -18,6 +18,10 @@
     --copy: #E6E4E4;
 }
 
+.vazio{
+    border: 1px solid red;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -150,6 +154,8 @@ p {
     width: 400px;
     height: 200px;
     margin: 0 0 20px 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
 }
 
 .section2>div+div {
@@ -197,37 +203,11 @@ p {
 }
 
 .section3 summary {
-    list-style-type: none;
-    text-align: justify;
     font-size: 1.5rem;
 }
 
-.section3 summary>i {
-    font-size: 2.5rem;
-}
-
-.faq1 {
-    position: relative;
-    top: 8px;
-    left: 15px;
-}
-
-.faq2 {
-    position: relative;
-    top: 8px;
-    left: 35px;
-}
-
-.faq3 {
-    position: relative;
-    top: 8px;
-    left: 6px;
-}
-
-.faq4 {
-    position: relative;
-    top: 8px;
-    left: 38px;
+.faq{
+    width: 700px;
 }
 
 .section3 details>p {
@@ -399,7 +379,7 @@ hr {
     box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
 }
 
-.adultosContent a {
+.btnCursos {
     color: var(--text-light);
     font-weight: 700;
     font-size: 1.5rem;
@@ -415,39 +395,20 @@ hr {
     width: 100%;
     height: 100vh;
     background-color: var(--secondary-color);
-}
-
-.jovensContent {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
-    height: 100vh;
-    margin: auto;
 }
 
-.jovensText>p {
-    color: var(--text-light);
+.jovensContent>p {
     width: 500px;
     margin-bottom: 50px;
     line-height: 1.5;
 }
 
-.jovensText>h1 {
+.jovensContent>h1 {
     color: var(--text-light);
     margin-bottom: 20px;
-}
-
-.jovensContent a {
-    color: var(--text-light);
-    font-weight: 700;
-    font-size: 1.5rem;
-    background-color: var(--primary-color);
-    text-decoration: none;
-    margin: auto;
-    padding: 15px 65px;
-    border-radius: 50px;
-    box-shadow: 5px 5px 8px rgba(1, 5, 5, 0.5);
 }
 
 .jovens img {
@@ -589,6 +550,7 @@ hr {
     background-color: var(--primary-color);
     text-decoration: none;
     margin: auto;
+    margin-top: 10px;
     padding: 12px 80px;
     border-radius: 50px;
     border: none;

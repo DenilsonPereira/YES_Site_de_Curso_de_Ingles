@@ -67,7 +67,7 @@ section{
 }
 
 .login #entrar{
-    
+    border: none;
     background-color: var(--primary-color);
     color: var(--text-light);
     text-decoration: none;
@@ -104,7 +104,3 @@ section{
     font-size: .8rem;
 }
 
-.buttons{
-    display: flex;
-    flex-direction: column;
-}

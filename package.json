@@ -1,0 +1,33 @@
+{
+  "name": "yes_backend",
+  "version": "1.0.0",
+  "description": "O backend do projeto yes idiomas",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon app.js",
+    "start": "node app.js",
+    "db:table": "node database/table.js",
+    "db:seed": "node database/seed.js",
+    "db:limpar": "node database/limparTabelas.js"
+  },
+  "type": "module",
+  "keywords": [
+    "cursos",
+    "idiomas"
+  ],
+  "author": "Denilson da Silva Pereira",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "path": "^0.12.7",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
